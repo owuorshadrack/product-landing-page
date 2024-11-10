@@ -1,10 +1,24 @@
-// Placeholder for any JavaScript interactivity (e.g., button animations, form validation)
-// Add smooth scroll effect
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
+function signUp() {
+    let name = document.getElementById('signUpName').value;
+    let email = document.getElementById('signUpEmail').value;
+    let password = document.getElementById('signUpPassword').value;
+
+    if (name && email && password) {
+        alert('Sign Up Successful!');
+        // Here, you would typically send this data to a server
+    } else {
+        alert('Please fill in all fields.');
+    }
+}
+
+function login() {
+    let email = document.getElementById('loginEmail').value;
+    let password = document.getElementById('loginPassword').value;
+
+    if (email && password) {
+        alert('Login Successful!');
+        // Here, you would typically validate this data with a server
+    } else {
+        alert('Please fill in all fields.');
+    }
+}
